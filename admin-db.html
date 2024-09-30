@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPang HK Attendance Tracker - Admin Dashboard</title>
+    <style>
+        :root {
+            --accent-color: #123524;
+            --hover-color: #1a4d35;
+            --background-color: #ffffff;
+            --text-color: #333333;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: var(--accent-color);
+            color: var(--background-color);
+            padding: 1rem;
+        }
+
+        .sidebar h2 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .sidebar nav ul {
+            list-style-type: none;
+        }
+
+        .sidebar nav ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar nav ul li a {
+            color: var(--background-color);
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .sidebar nav ul li a:hover {
+            background-color: var(--hover-color);
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--accent-color);
+            color: var(--background-color);
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <h2>UPang HK Attendance Tracker</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Attendance</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <h1>Admin Dashboard</h1>
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Students</h3>
+                <p>1,234</p>
+            </div>
+            <div class="stat-card">
+                <h3>Average Attendance</h3>
+                <p>87%</p>
+            </div>
+        </section>
+        <section>
+            <h2>Student Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Attendance Rate</th>
+                        <th>Scholarship Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>03-1234-56789</td>
+                        <td>Aliado Richa</td>
+                        <td>95%</td>
+                        <td class="scholarship-status hk25">HK25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

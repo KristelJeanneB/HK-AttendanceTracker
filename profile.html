@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .profile-card {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            width: 800px;
+            overflow: hidden;
+        }
+        .profile-left {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #d3d3d3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .student-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .student-title {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .student-id {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .profile-right {
+            background-color: #d5e1d5;
+            padding: 40px;
+            width: 60%;
+        }
+        .about-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .info-item {
+            margin-bottom: 15px;
+        }
+        .info-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .info-value {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+            background-repeat: no-repeat;
+            background-position-x: 98%;
+            background-position-y: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-left">
+            <div class="profile-picture">Profile Picture</div>
+            <div class="student-name">Student Name</div>
+            <div class="student-title">HK Scholar</div>
+        </div>
+        <div class="profile-right">
+            <div class="about-title">Profile</div>
+            <div class="info-item">
+                <div class="info-label">Student Number</div>
+                <div class="info-value">
+                    <input type="text" id="studentNumber" name="studentNumber" placeholder="Enter student number">
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Email</div>
+                <div class="info-value">
+                    <input type="email" id="email" name="email" placeholder="Enter email address">
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Phone No.</div>
+                <div class="info-value">
+                    <input type="tel" id="phoneNo" name="phoneNo" placeholder="Enter phone number">
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Address</div>
+                <div class="info-value">
+                    <input type="text" id="address" name="address" placeholder="Enter address">
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">HK Scholarship</div>
+                <div class="info-value">
+                    <select id="hkScholarship" name="hkScholarship">
+                        <option value="">Select scholarship level</option>
+                        <option value="HK25">HK25</option>
+                        <option value="HK50">HK50</option>
+                        <option value="HK75">HK75</option>
+                        <option value="HK100">HK100</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
